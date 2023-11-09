@@ -31,11 +31,13 @@
     h1 {
         font-weight: 500;
         font-size: 4.5rem;
+        margin-top: 40px;
     }
 
     p.name {
         font-weight: 500;
         font-size: 2.2rem;
+        margin: 30px 0;
     }
 
     p {
