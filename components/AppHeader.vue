@@ -34,15 +34,8 @@ const modeButtonIconPath = computed(() => {
 </script>
 
 <template>
-  <header class="flex justify-between mb-10 min-h-9">
-    <nav
-      class="flex items-center gap-4 no-underline text-sm text-zinc-800 dark:text-zinc-100 cursor-pointer"
-    >
-      <NuxtLink href="">About</NuxtLink>
-      <NuxtLink href="">Projects</NuxtLink>
-      <NuxtLink href="">Services</NuxtLink>
-      <NuxtLink href="">Contact</NuxtLink>
-    </nav>
+  <header class="flex justify-between min-h-9">
+    <Navigation />
 
     <button
       class="min-w-9 min-h-9 p-1.5 rounded-full ring-1 ring-zinc-100 dark:ring-zinc-300/20 dark:hover:ring-white/20"
