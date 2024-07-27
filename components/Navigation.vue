@@ -2,11 +2,9 @@
 
 <template>
   <nav
-    class="flex items-center gap-4 no-underline text-sm text-zinc-800 dark:text-zinc-100 cursor-pointer"
+    class="flex items-center gap-4 no-underline text-sm font-medium text-zinc-800 dark:text-zinc-100 cursor-pointer"
   >
-    <NuxtLink href="">About</NuxtLink>
-    <NuxtLink href="">Projects</NuxtLink>
-    <NuxtLink href="">Services</NuxtLink>
-    <NuxtLink href="">Contact</NuxtLink>
+    <NuxtLink to="/">About</NuxtLink>
+    <NuxtLink to="/projects">Projects</NuxtLink>
   </nav>
 </template>
