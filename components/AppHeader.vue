@@ -1,34 +1,22 @@
 <script lang="ts" setup>
 import darkIcon from '/assets/images/dark-mode.png'
 import lightIcon from '/assets/images/light-mode.png'
-import callbackIcon from '/assets/images/callback.png'
 
 const colorMode = useColorMode()
 
-const localMode = useCookie('color-mode')
-
 const handleModeChange = () => {
-  if (colorMode.preference === 'dark') {
-    colorMode.preference = 'light'
-    localMode.value = 'light'
+  if (colorMode.preference === 'system') {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
   } else {
-    colorMode.preference = 'dark'
-    localMode.value = 'dark'
+    colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
   }
 }
 
 const modeButtonIconPath = computed(() => {
-  if (colorMode.preference !== 'system') {
-    localMode.value = colorMode.preference
-  }
-
-  switch (localMode.value) {
-    case 'dark':
-      return darkIcon
-    case 'light':
-      return lightIcon
-    default:
-      return callbackIcon
+  if (colorMode.value === 'dark') {
+    return darkIcon
+  } else {
+    return lightIcon
   }
 })
 </script>
@@ -41,7 +29,13 @@ const modeButtonIconPath = computed(() => {
       class="min-w-9 min-h-9 p-1.5 rounded-full ring-1 ring-zinc-100 dark:ring-zinc-300/20 dark:hover:ring-white/20"
       @click="handleModeChange"
     >
-      <img :src="modeButtonIconPath" alt="Mode icon" />
+      <ClientOnly>
+        <img :src="modeButtonIconPath" alt="Mode" loading="lazy" />
+
+        <template #fallback>
+          <img :src="lightIcon" alt="Mode" loading="lazy" />
+        </template>
+      </ClientOnly>
     </button>
   </header>
 </template>

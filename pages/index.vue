@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-const currentMode = useCookie('color-mode')
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="h-full my-2 md:my-8">
@@ -22,35 +20,76 @@ const currentMode = useCookie('color-mode')
     <p class="text-balance max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
       I am always looking for new opportunities to learn and grow as a developer. Have a project in
       mind or just want to chat? Reach out to me at
-      <a href="mailto:tsotnemeskhuri@gmail.com">
-        <img
-          v-if="currentMode === 'dark'"
-          src="/assets/images/email-dark.png"
-          alt=""
-          class="inline"
-        />
-        <img
-          v-if="currentMode === 'light'"
-          src="/assets/images/email-light.png"
-          alt=""
-          class="inline"
-        />
-      </a>
+      <ClientOnly>
+        <a href="mailto:tsotnemeskhuri@gmail.com">
+          <img
+            v-if="$colorMode.value === 'dark'"
+            src="/assets/images/email-dark.png"
+            width="20"
+            height="20"
+            alt="Email"
+            class="inline"
+            loading="lazy"
+          />
+          <img
+            v-if="$colorMode.value === 'light'"
+            src="/assets/images/email-light.png"
+            width="20"
+            height="20"
+            alt="Email"
+            class="inline"
+            loading="lazy"
+          />
+        </a>
+
+        <template #fallback>
+          <a href="mailto:tsotnemeskhuri@gmail.com">
+            <img
+              src="/assets/images/email-light.png"
+              width="20"
+              height="20"
+              alt="Email"
+              class="inline"
+            />
+          </a>
+        </template>
+      </ClientOnly>
       or
-      <a href="https://www.linkedin.com/in/tsotne-meskhuri-128773210/" target="_blank">
-        <img
-          v-if="currentMode === 'dark'"
-          src="/assets/images/linkedin-dark.png"
-          alt=""
-          class="inline"
-        />
-        <img
-          v-if="currentMode === 'light'"
-          src="/assets/images/linkedin-light.png"
-          alt=""
-          class="inline"
-        />
-      </a>
+      <ClientOnly>
+        <a href="https://www.linkedin.com/in/tsotne-meskhuri-128773210/" target="_blank">
+          <img
+            v-if="$colorMode.value === 'dark'"
+            src="/assets/images/linkedin-dark.png"
+            width="20"
+            height="20"
+            alt="Linkedin"
+            class="inline"
+            loading="lazy"
+          />
+          <img
+            v-if="$colorMode.value === 'light'"
+            src="/assets/images/linkedin-light.png"
+            width="20"
+            height="20"
+            alt="Linkedin"
+            class="inline"
+            loading="lazy"
+          />
+        </a>
+
+        <template #fallback>
+          <a href="https://www.linkedin.com/in/tsotne-meskhuri-128773210/" target="_blank">
+            <img
+              src="/assets/images/linkedin-light.png"
+              width="20"
+              height="20"
+              alt="Linkedin"
+              class="inline"
+              loading="lazy"
+            />
+          </a>
+        </template> </ClientOnly
+      >.
     </p>
     <p class="max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
       When I'm not immersed in code, I enjoy playing basketball. I play every weekend at the park
