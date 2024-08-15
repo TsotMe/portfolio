@@ -1,32 +1,32 @@
 <script lang="ts" setup>
 import ccc from '/assets/images/contract-chair-company.jpg'
 import dss from '/assets/images/dss.svg'
-import payfast from '/assets/images/payfast.svg'
+import multiStepForm from '/assets/images/multi-step-form.png'
 
 const projects = [
   {
     id: useId(),
     image: ccc,
-    title: 'Contract Chair Company',
+    title: 'The Contract Chair Co',
     description:
-      "Contract Chair Company is a furniture company that provides high-quality furniture for businesses. I've worked on this project to help them improve their online presence.",
+      "The Contract Chair Co. is a furniture company that provides high-quality furniture for businesses. I've worked on this project with my team members at GRAEY.",
     link: 'https://www.thecontractchair.co.uk/'
   },
   {
     id: useId(),
     image: dss,
-    title: 'Data Studio',
+    title: 'DataStudio',
     description:
-      "Data Studio is a data visualization tool that turns your data into informative reports and dashboards that are easy to read, easy to share, and fully customizable. I've worked on this project to help them improve their online presence.",
+      "DSS - The Agreement Management Software that helps businesses manage their agreements. I've worked on this project with my colleagues at GRAEY.",
     link: 'https://www.datastudio.ge/'
   },
   {
     id: useId(),
-    image: payfast,
-    title: 'Pay Fast',
+    image: multiStepForm,
+    title: 'Multi-Step Form',
     description:
-      "Pay Fast is a payment gateway that allows you to accept payments from your customers. I've worked on this project to help them improve their online presence.",
-    link: 'https://www.payfast.ge/'
+      "A multi-step form that helps users to fill out the form in a more organized way. I've created this project to showcase my skills.",
+    link: 'https://tsotme-multi-step-form.netlify.app/'
   }
 ]
 </script>
@@ -38,9 +38,9 @@ const projects = [
     </h1>
 
     <p class="max-w-2xl text-base text-zinc-800 dark:text-zinc-100">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur atque similique delectus
-      recusandae in perferendis optio, facilis sed non explicabo. Odit fugit facilis, modi dolorem
-      ducimus voluptate omnis ipsa sapiente.
+      I've had the opportunity to work on numerous projects over the years, but these are the ones
+      that stand out the most. I owe a lot to my incredible colleagues their collaboration and the
+      valuable lessons I've learned from them.
     </p>
 
     <div class="grid grid-cols-1 mt-20 gap-2 md:grid-cols-2 lg:grid-cols-3">
