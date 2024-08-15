@@ -1,3 +1,9 @@
+<script lang="ts" setup>
+useHead({
+  titleTemplate: 'TsotMe'
+})
+</script>
+
 <template>
   <NuxtLayout>
     <NuxtPage />
