@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <!-- <div class="flex items-center gap-4 min-h-6">
+  <div class="flex items-center gap-4 min-h-6">
     <ClientOnly>
       <a href="https://www.linkedin.com/in/tsotne-meskhuri-128773210/" target="_blank">
         <img
@@ -58,5 +58,5 @@
         </a>
       </template>
     </ClientOnly>
-  </div> -->
+  </div>
 </template>
