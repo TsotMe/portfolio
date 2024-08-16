@@ -17,7 +17,7 @@
       really enjoy with feel of creating something new and useful.
     </p>
 
-    <p class="text-balance max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
+    <!-- <p class="text-balance max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
       I am always looking for new opportunities to learn and grow as a developer. Have a project in
       mind or just want to chat? Reach out to me at
       <ClientOnly>
@@ -90,7 +90,7 @@
           </a>
         </template> </ClientOnly
       >.
-    </p>
+    </p> -->
     <p class="max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
       When I'm not immersed in code, I enjoy playing basketball. I play every weekend at the park
       near my house. Sometimes I play with my friends, sometimes with strangers. My friend got me
