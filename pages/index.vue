@@ -23,7 +23,7 @@
       <ClientOnly>
         <a href="mailto:tsotnemeskhuri@gmail.com">
           <img
-            v-if="$colorMode.value === 'dark'"
+            v-if="$colorMode?.value === 'dark'"
             src="/assets/images/email-dark.png"
             width="20"
             height="20"
@@ -32,7 +32,7 @@
             loading="lazy"
           />
           <img
-            v-if="$colorMode.value === 'light'"
+            v-if="$colorMode?.value === 'light'"
             src="/assets/images/email-light.png"
             width="20"
             height="20"
@@ -58,7 +58,7 @@
       <ClientOnly>
         <a href="https://www.linkedin.com/in/tsotne-meskhuri-128773210/" target="_blank">
           <img
-            v-if="$colorMode.value === 'dark'"
+            v-if="$colorMode?.value === 'dark'"
             src="/assets/images/linkedin-dark.png"
             width="20"
             height="20"
@@ -67,7 +67,7 @@
             loading="lazy"
           />
           <img
-            v-if="$colorMode.value === 'light'"
+            v-if="$colorMode?.value === 'light'"
             src="/assets/images/linkedin-light.png"
             width="20"
             height="20"

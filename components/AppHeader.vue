@@ -19,10 +19,6 @@ const modeButtonIconPath = computed(() => {
     return lightIcon
   }
 })
-
-if (import.meta.server) {
-  console.log(colorMode)
-}
 </script>
 
 <template>
