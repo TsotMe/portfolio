@@ -31,10 +31,6 @@ const modeButtonIconPath = computed(() => {
     >
       <ClientOnly>
         <img :src="modeButtonIconPath" alt="Mode" loading="lazy" />
-
-        <template #fallback>
-          <img :src="lightIcon" alt="Mode" loading="lazy" />
-        </template>
       </ClientOnly>
     </button>
   </header>

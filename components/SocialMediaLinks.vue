@@ -47,15 +47,9 @@
       </a>
 
       <template #fallback>
-        <a href="https://www.linkedin.com/in/tsotne-meskhuri-128773210/" target="_blank">
-          <img src="/assets/images/linkedin-light.png" alt="Linkedin" loading="lazy" />
-        </a>
-        <a href="https://github.com/TsotMe/" target="_blank">
-          <img src="/assets/images/github-light.png" alt="Github" loading="lazy" />
-        </a>
-        <a href="https://x.com/TMeskhuri" target="_blank">
-          <img src="/assets/images/twitter-light.png" alt="Twitter" loading="lazy" />
-        </a>
+        <img src="/assets/images/linkedin-light.png" alt="Linkedin" loading="lazy" />
+        <img src="/assets/images/github-light.png" alt="Github" loading="lazy" />
+        <img src="/assets/images/twitter-light.png" alt="Twitter" loading="lazy" />
       </template>
     </ClientOnly>
   </div>

@@ -17,7 +17,7 @@
       really enjoy with feel of creating something new and useful.
     </p>
 
-    <!-- <p class="text-balance max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
+    <p class="text-balance max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
       I am always looking for new opportunities to learn and grow as a developer. Have a project in
       mind or just want to chat? Reach out to me at
       <ClientOnly>
@@ -32,7 +32,7 @@
             loading="lazy"
           />
           <img
-            v-if="$colorMode?.value === 'light'"
+            v-else
             src="/assets/images/email-light.png"
             width="20"
             height="20"
@@ -43,15 +43,13 @@
         </a>
 
         <template #fallback>
-          <a href="mailto:tsotnemeskhuri@gmail.com">
-            <img
-              src="/assets/images/email-light.png"
-              width="20"
-              height="20"
-              alt="Email"
-              class="inline"
-            />
-          </a>
+          <img
+            src="/assets/images/email-light.png"
+            width="20"
+            height="20"
+            alt="Email"
+            class="inline"
+          />
         </template>
       </ClientOnly>
       or
@@ -67,7 +65,7 @@
             loading="lazy"
           />
           <img
-            v-if="$colorMode?.value === 'light'"
+            v-else
             src="/assets/images/linkedin-light.png"
             width="20"
             height="20"
@@ -78,19 +76,17 @@
         </a>
 
         <template #fallback>
-          <a href="https://www.linkedin.com/in/tsotne-meskhuri-128773210/" target="_blank">
-            <img
-              src="/assets/images/linkedin-light.png"
-              width="20"
-              height="20"
-              alt="Linkedin"
-              class="inline"
-              loading="lazy"
-            />
-          </a>
+          <img
+            src="/assets/images/linkedin-light.png"
+            width="20"
+            height="20"
+            alt="Linkedin"
+            class="inline"
+            loading="lazy"
+          />
         </template> </ClientOnly
       >.
-    </p> -->
+    </p>
     <p class="max-w-2xl mb-4 text-base text-zinc-800 dark:text-zinc-100">
       When I'm not immersed in code, I enjoy playing basketball. I play every weekend at the park
       near my house. Sometimes I play with my friends, sometimes with strangers. My friend got me
